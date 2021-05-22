@@ -31,8 +31,8 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-export const pageQuery = graphql`
-  query {
+export const ProductQuery = graphql`
+  Query  {
     allMagentoProduct {
         edges {
         node {
@@ -42,17 +42,6 @@ export const pageQuery = graphql`
             
         }
         }
-    }
-    allMagentoStoreConfig {
-    edges {
-      node {
-        id
-        code
-        website_id
-        locale
-        base_currency_code
-      }
-    }
     }
   }
 `
