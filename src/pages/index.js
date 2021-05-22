@@ -31,7 +31,7 @@ const IndexPage = () => (
 
 export default IndexPage
 export const ProductQuery = graphql`
-  Query  {
+  query  {
     allMagentoProduct {
         edges {
         node {
