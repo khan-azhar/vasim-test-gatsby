@@ -18,7 +18,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   
   <Layout>
     <Seo title="Using TypeScript" />
-    <h1>FlipFlops US</h1>
+    <h1>FlipFlops USA</h1>
     
      {data.allMagentoProduct.edges.map(({ node }) => (
             <div key={node.id}>
