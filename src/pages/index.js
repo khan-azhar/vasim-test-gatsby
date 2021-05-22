@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
- const data = this.props.data
+ 
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
@@ -29,16 +29,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-export const ProductQuery = graphql`
-  query  {
-    allMagentoProduct {
-        edges {
-        node {
-            id
-            sku
-            name        
-        }
-        }
-    }
-  }
-`
