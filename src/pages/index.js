@@ -6,8 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  const data = this.props.data
-  {data}
+  
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
