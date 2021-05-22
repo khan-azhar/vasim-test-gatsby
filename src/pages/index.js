@@ -27,3 +27,29 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+export const pageQuery = graphql`
+  query {
+    allMagentoProduct {
+        edges {
+        node {
+            id
+            sku
+            name
+            description
+            # ...
+        }
+        }
+    }
+    allMagentoStoreConfig {
+    edges {
+      node {
+        id
+        code
+        website_id
+        locale
+        base_currency_code
+      }
+    }
+    }
+  }
+`
