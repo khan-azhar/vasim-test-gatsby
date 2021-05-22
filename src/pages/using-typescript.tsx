@@ -7,7 +7,9 @@ import Seo from "../components/seo"
 
 type DataProps = {
   site: {
-    buildTime: string,
+    buildTime: string
+  },
+  products:{
     allMagentoProduct
   }
 }
@@ -30,7 +32,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       You're currently on the page "{path}" which was built on{" "}
       {data.site.buildTime}.
     </p>
-     {data.site.allMagentoProduct.edges.map(({ node }) => (
+     {data.products.allMagentoProduct.edges.map(({ node }) => (
             <div key={node.id}>
               <Link to={node.id}>
                 <h2>{node.name}</h2>
@@ -54,7 +56,9 @@ export default UsingTypescript
 export const query = graphql`
   {
     site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z"),
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+    },
+    products {
     allMagentoProduct {
         edges {
         node {
