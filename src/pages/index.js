@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+const data = this.props.data
 const IndexPage = () => (
  
   <Layout>
