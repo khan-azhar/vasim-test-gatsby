@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-const data = this.props.data
+
 const IndexPage = () => (
- 
+ const data = this.props.data
   <Layout>
     <Seo title="Home" />
     <h1>Hi people</h1>
@@ -37,8 +37,7 @@ export const ProductQuery = graphql`
         node {
             id
             sku
-            name
-            
+            name        
         }
         }
     }
