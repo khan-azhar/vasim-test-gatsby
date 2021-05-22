@@ -8,10 +8,14 @@ import Seo from "../components/seo"
 type DataProps = {
   site: {
     buildTime: string
+  },
+  allMagentoProduct:{
+    edges
   }
 }
 
 const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+  
   <Layout>
     <Seo title="Using TypeScript" />
     <h1>Gatsby supports TypeScript by default!</h1>
@@ -48,3 +52,17 @@ export const query = graphql`
     }
   }
 `
+export const ProductQuery = graphql`
+  query  {
+    allMagentoProduct {
+        edges {
+        node {
+            id
+            sku
+            name        
+        }
+        }
+    }
+  }
+`
+
