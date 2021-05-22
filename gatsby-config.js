@@ -28,6 +28,24 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    
+    {
+      resolve: 'gatsby-source-magento',
+      options: {
+        /*
+         * The base URL of the Magento2 site without the trailingslash and the protocol. This is required.
+         * Example : 'www.example-site.com'
+         */
+        baseUrl: 'www.flipflopsusa.com',
+        // The protocol. This can be http or https.
+        protocol: 'http',
+        login: {
+          username: 'revered',
+          password: 'Revered@135',
+        },
+      },
+    },
+    
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
