@@ -36,7 +36,7 @@ module.exports = {
          * The base URL of the Magento2 site without the trailingslash and the protocol. This is required.
          * Example : 'www.example-site.com'
          */
-        baseUrl: 'www.flipflopsusa.com',
+        baseUrl: 'flipflopsusa.com',
         // The protocol. This can be http or https.
         protocol: 'http',
         login: {
