@@ -32,6 +32,14 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       You're currently on the page "{path}" which was built on{" "}
       {data.site.buildTime}.
     </p>
+     {data.allMagentoProduct.edges.map(({ node }) => (
+            <div key={node.id}>
+              <Link to={node.id}>
+                <h2>{node.name}</h2>
+              </Link>
+              <h3>{node.sku}</h3>
+            </div>
+          ))}
     <p>
       To learn more, head over to our{" "}
       <a href="https://www.gatsbyjs.com/docs/typescript/">
