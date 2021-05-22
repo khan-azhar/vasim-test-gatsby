@@ -32,7 +32,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       You're currently on the page "{path}" which was built on{" "}
       {data.site.buildTime}.
     </p>
-     {data.allMagentoProduct.edges.map(({ node }) => (
+     {data.site.allMagentoProduct.edges.map(({ node }) => (
             <div key={node.id}>
               <Link to={node.id}>
                 <h2>{node.name}</h2>
@@ -56,8 +56,7 @@ export default UsingTypescript
 export const query = graphql`
   {
     site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    },
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z"),
     allMagentoProduct {
         edges {
         node {
@@ -66,6 +65,7 @@ export const query = graphql`
             name        
         }
         }
+    }
     }
   }
 `
