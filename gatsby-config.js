@@ -29,14 +29,14 @@ module.exports = {
       },
     },
     
-   /* {
+    {
       resolve: 'gatsby-source-magento',
       options: {
         /*
          * The base URL of the Magento2 site without the trailingslash and the protocol. This is required.
          * Example : 'www.example-site.com'
          */
-     /*   baseUrl: 'flipflopsusa.com',
+        baseUrl: 'flipflopsusa.com',
         // The protocol. This can be http or https.
         protocol: 'http',
         login: {
@@ -44,7 +44,7 @@ module.exports = {
           password: 'Revered@135',
         },
       },
-    },*/
+    },
     
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
