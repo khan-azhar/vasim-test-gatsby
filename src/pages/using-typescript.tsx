@@ -20,14 +20,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <Seo title="Using TypeScript" />
     <h1>FlipFlops USA</h1>
     
-     {data.allMagentoProduct.edges.map(({ node }) => (
-            <div key={node.id}>
-              <Link to={node.id}>
-                <h2>{node.name}</h2>
-              </Link>
-              <h3>{node.sku}</h3>
-            </div>
-          ))}
+   
     
     <Link to="/">Go back to the homepage</Link>
   </Layout>
@@ -39,15 +32,6 @@ export const query = graphql`
   {
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    },
-    allMagentoProduct {
-        edges {
-        node {
-            id
-            sku
-            name        
-        }
-        }
     }
   }
 `
