@@ -8,9 +8,6 @@ import Seo from "../components/seo"
 type DataProps = {
   site: {
     buildTime: string
-  },
-  allMagentoProduct:{
-    edges
   }
 }
 
