@@ -39,6 +39,13 @@ export const query = graphql`
   {
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+      export const query = graphql`
+      {
+        site {
+          buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+        }
+      }
+    `
     }
   }
 `
