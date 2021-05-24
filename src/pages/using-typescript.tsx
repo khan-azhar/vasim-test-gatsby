@@ -40,14 +40,6 @@ export const query = graphql`
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
     },
-    allMagentoProduct {
-        edges {
-        node {
-            id
-            sku
-            name        
-        }
-        }
-    }
+   
   }
 `
