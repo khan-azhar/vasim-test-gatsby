@@ -1,6 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { PageProps, Link, GraphiQL } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -28,7 +28,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 
 export default UsingTypescript
 
-export const query = graphql`
+export const query = GraphiQL`
   {
     site {
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
